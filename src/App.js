@@ -57,11 +57,12 @@ function App() {
     const imageData = canvas.toDataURL("image/jpeg");
 
     // Mostrar la imagen capturada en la pantalla de respuesta
-    setResponse(<img src={imageData} alt="Foto capturada" />);
+    //setResponse(<img src={imageData} alt="Foto capturada" />);
+    setResponse("Foto capturada");
   };
 
   return (
-    <div>
+    <div lang="es">
       <h1>Gestor de facturas</h1>
       {/* Botón */}
       <button onClick={handleButtonClick}>Cámara</button>
